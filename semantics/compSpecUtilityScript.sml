@@ -1,4 +1,5 @@
-open HolKernel boolLib Parse bossLib pred_setTheory;
+open HolKernel boolLib Parse bossLib;
+open pred_setTheory;
 
 (* ========================================== *)
 (* Compositional specification utility theory *)
@@ -16,6 +17,38 @@ End
 
 Definition downward_closed:
  downward_closed s = (!e. e IN s ==> (!e'. e' SUBSET e ==> e' IN s))
+End
+
+Definition ifst:
+ ifst : 'a -> ('a + 'b + 'c + 'd) = INL
+End
+
+Definition isnd:
+ isnd : 'b -> ('a + 'b + 'c + 'd) = INR o INL
+End
+
+Definition itrd:
+ itrd : 'c -> ('a + 'b + 'c + 'd) = INR o INR o INL
+End
+
+Definition ifth:
+ ifth : 'd -> ('a + 'b + 'c + 'd) = INR o INR o INR
+End
+
+Definition ofst:
+ ofst : ('a + 'b + 'c + 'd) -> 'a = OUTL
+End
+
+Definition osnd:
+ osnd : ('a + 'b + 'c + 'd) -> 'b = OUTL o OUTR
+End
+
+Definition otrd:
+ otrd : ('a + 'b + 'c + 'd) -> 'c = OUTL o OUTR o OUTR
+End
+
+Definition ofth:
+ ofth : ('a + 'b + 'c + 'd) -> 'd = OUTR o OUTR o OUTR
 End
 
 (* ------- *)
