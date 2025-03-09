@@ -23,6 +23,7 @@ make
 - [`compSpecMetaScript.sml`](semantics/compSpecMetaScript.sml): semantics and metatheory of specifications and components, including proof system soundness
 - [`compSpecFolScript.sml`](semantics/compSpecFolScript.sml): interpretation as first-order theory
 - [`compSpecFolScript.sml`](semantics/compSpecFolScript.sml): interpretation as first-order theory
+- [`compSpecExampleScript.sml`](semantics/compSpecExampleScript.sml): examples of proof system use
 - [`mitlScript.sml`](semantics/mitlScript.sml): MITL formal semantics
 - [`compSpecMitlScript.sml`](semantics/compSpecMitlScript.sml): instantiation of specifications for MITL
 - [`compSpecMitlFLDScript.sml`](semantics/compSpecMitlFLDScript.sml): instantiation for a fuel level display (FLD) system
