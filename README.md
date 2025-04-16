@@ -75,7 +75,7 @@ make
 
 ### Specification language and proof system examples
 
-- **Example 4**:  in [`compSpecExampleScript.sml`](semantics/compSpecExampleScript.sml):
+- **Example 4**: compositional specification and proof example in [`compSpecExampleScript.sml`](semantics/compSpecExampleScript.sml):
   - `Definition example_Ps: ...` (premises)
   - `Definition example_goal: ...` (goal)
   - `Theorem example_refine_spec_holds: ...` (proof system proof of goal assuming premises)
