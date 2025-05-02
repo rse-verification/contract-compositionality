@@ -1,0 +1,6 @@
+CLINE_OPTIONS = -r
+
+INCLUDES = $(SPECDIR)/fol $(SPECDIR)/semantics
+
+all: $(DEFAULT_TARGETS)
+.PHONY: all

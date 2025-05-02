@@ -8,10 +8,10 @@ Requirements:
 - [Poly/ML 5.7.1](https://github.com/polyml/polyml) (or later)
 - [HOL4 trindemossen-1](https://github.com/HOL-Theorem-Prover/HOL/releases/tag/trindemossen-1)
 
-The default Makefile task, which assumes `Holmake` is available on the system, builds all core HOL4 theories:
+All HOL4 files can be built and checked using the `Holmake` tool bundled with HOL4:
 
 ```shell
-make
+Holmake
 ```
 
 ## List of HOL4 files
