@@ -90,6 +90,7 @@ make
   - `Definition interval_sem: ...` (interval semantics)  
   - `Type timed_word = ...` (timed word definition)
   - `Definition mitl_general_sem: ...` (MITL semantics as sets of timed words)
+  - `Definition mitl_always_occ_past_def: ...` (parameterized MITL formula using box and dashed diamond)
 - Extended specification language syntax in [`compSpecScript.sml`](semantics/compSpecScript.sml):
   - `T =  (* temporal specification constant *) ...`
   - `St =  (* temporal specification term *) ...`
@@ -103,6 +104,7 @@ make
   - `Inductive spec_temporal_mitl_proof: ...` (MITL proof system rule)
   - `Definition spec_temporal_mitl_system_sound: ...` (temporal proof system soundness)
   - `Theorem spec_temporal_mitl_holds_system_sound: ...` (soundness of MITL proof system rule)
+  - `Theorem Pt_sem_mitl_sem_always_occ_past_three: ...` (example of specification refinement using MITL formulas inside specifications)
 
 ### Fuel-level display (FLD) system model
 
